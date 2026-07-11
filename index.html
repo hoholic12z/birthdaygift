@@ -1,1 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A cinematic, luxurious first anniversary website filled with romance, elegance, and heartfelt memories."
+    />
+    <meta name="theme-color" content="#050505" />
+    <title>Happy First Anniversary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="s.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
+    <div class="loading-screen" id="loading-screen">
+      <div class="loading-card">
+        <div class="loading-ring"></div>
+        <p>Opening our love story...</p>
+      </div>
+    </div>
+
+    <div class="password-overlay" id="password-screen">
+      <div class="password-card">
+        <p class="eyebrow">Private Access</p>
+        <h1>Only My Love Can Enter</h1>
+        <form id="password-form">
+          <label for="secret-date">Choose the secret date</label>
+          <input
+            id="secret-date"
+            name="secret-date"
+            type="text"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="YYYY-MM-DD"
+            pattern="\d{4}-\d{2}-\d{2}"
+            required
+          />
+          <button type="submit">Unlock the Magic</button>
+        </form>
+        <p class="password-hint">The correct date is the one that belongs to the Queen of My Heart.</p>
+        <p class="password-message" id="password-message" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <main class="site" id="site">
+      <section class="hero section" id="home">
+        <div class="hero-glow"></div>
+        <div class="stars" id="stars"></div>
+        <div class="hero-content" data-reveal>
+          <p class="eyebrow">One Year • Infinite Love</p>
+          <h1>Happy First Anniversary <span>❤️</span></h1>
+          <p class="hero-copy">
+            365 Days...<br />
+            Thousands of memories...<br />
+            One beautiful love story.
+          </p>
+          <button class="premium-btn" data-scroll-target="story">Begin Our Journey</button>
+        </div>
+      </section>
+
+      <section class="section story-section" id="story">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Our Story</p>
+          <h2>Every chapter led us here.</h2>
+        </div>
+        <div class="timeline-grid">
+          <article class="timeline-card" data-reveal>
+            <h3>❤️ The Day We Met</h3>
+            <p>The universe quietly arranged a moment we would never forget.</p>
+          </article>
+          <article class="timeline-card" data-reveal>
+            <h3>❤️ Our First Chat</h3>
+            <p>What started as a simple hello turned into endless conversations.</p>
+          </article>
+          <article class="timeline-card" data-reveal>
+            <h3>❤️ First Call</h3>
+            <p>Your voice made the whole world feel softer and warmer.</p>
+          </article>
+          <article class="timeline-card" data-reveal>
+            <h3>❤️ First Date</h3>
+            <p>One sweet evening and a thousand sparks later, everything changed.</p>
+          </article>
+          <article class="timeline-card" data-reveal>
+            <h3>❤️ The Moment I Realized I Love You</h3>
+            <p>It was not one grand event, but a thousand gentle ones.</p>
+          </article>
+          <article class="timeline-card" data-reveal>
+            <h3>❤️ Today</h3>
+            <p>A year later, and my heart still chooses you, every single day.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Gallery</p>
+          <h2>Moments wrapped in gold and glow.</h2>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-card" data-reveal>
+            <img
+              src="img1.jpeg"
+              alt="Romantic couple in a sunset setting"
+              loading="lazy"
+            />
+          </article>
+          <article class="gallery-card" data-reveal>
+            <img
+              src="img2.jpeg"
+              alt="A tender embrace under warm lights"
+              loading="lazy"
+            />
+          </article>
+          <article class="gallery-card" data-reveal>
+            <img
+              src="img3.jpeg"
+              alt="A dreamy couple walking together"
+              loading="lazy"
+            />
+          </article>
+          <article class="gallery-card" data-reveal>
+            <img
+              src="img4.jpeg"
+              alt="A luxurious candlelight date"
+              loading="lazy"
+            />
+          </article>
+          <article class="gallery-card" data-reveal>
+            <img
+              src="img5.jpeg"
+              alt="A glamorous romantic portrait"
+              loading="lazy"
+            />
+          </article>
+          <article class="gallery-card" data-reveal>
+            <img
+              src="img6.jpeg"
+              alt="A warm smile and golden lights"
+              loading="lazy"
+            />
+          </article>
+        </div>
+      </section>
+
+      <section class="section letter-section" id="letter">
+        <div class="letter-card" data-reveal>
+          <p class="eyebrow">My Letter To You</p>
+          <h2>My love,</h2>
+          <p>
+            One year ago, I never imagined someone could become my peace, my happiness, and my favorite part of every single day.
+          </p>
+          <p>
+            Thank you for every smile, every laugh, every late-night conversation, every tiny moment that turned into unforgettable memories.
+          </p>
+          <p>
+            No matter where life takes us, I promise to always choose you.
+          </p>
+          <p>
+            Happy First Anniversary.
+          </p>
+          <p>
+            I love you more than words can ever explain.
+          </p>
+          <p>
+            Forever Yours ❤️
+          </p>
+        </div>
+      </section>
+
+      <section class="section memories-section" id="memories">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Memories</p>
+          <h2>Little moments that made us us.</h2>
+        </div>
+        <div class="memories-grid">
+          <button class="memory-card" type="button" data-reveal data-image="img7.jpeg" data-title="Our funniest memory" data-message="The day we laughed so hard our stomachs hurt and the whole moment felt like a little movie scene made just for us.">
+            Our funniest memory 😂
+          </button>
+          <button class="memory-card" type="button" data-reveal data-image="img8.jpeg" data-title="Our cutest moment" data-message="The quiet, tender little moment when your smile made my whole world feel softer and warmer.">
+            Our cutest moment 🥹
+          </button>
+          <button class="memory-card" type="button" data-reveal data-image="img1.jpeg" data-title="Our biggest fight" data-message="Even our toughest moments taught us how to love with patience, honesty, and a heart that always comes back.">
+            Our biggest fight 😅
+          </button>
+          <button class="memory-card" type="button" data-reveal data-image="img2.jpeg" data-title="Our strongest comeback" data-message="The moment we chose each other again, stronger, softer, and more in love than before.">
+            Our strongest comeback ❤️
+          </button>
+          <button class="memory-card" type="button" data-reveal data-image="img3.jpeg" data-title="Our dream together" data-message="The beautiful future we keep building with every dream, every promise, and every heartbeat.">
+            Our dream together 🌎
+          </button>
+        </div>
+      </section>
+
+      <section class="section counter-section" id="counter">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">365 Days</p>
+          <h2>We made a year feel like a fairytale.</h2>
+        </div>
+        <div class="counter-grid">
+          <article class="counter-card" data-reveal>
+            <div class="counter-number" data-target="365">0</div>
+            <p>Days Together</p>
+          </article>
+          <article class="counter-card" data-reveal>
+            <div class="counter-number" data-target="8760">0</div>
+            <p>Hours</p>
+          </article>
+          <article class="counter-card" data-reveal>
+            <div class="counter-number" data-target="525600">0</div>
+            <p>Minutes</p>
+          </article>
+          <article class="counter-card" data-reveal>
+            <div class="counter-number" data-target="1000000">0</div>
+            <p>Millions of Smiles</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reasons-section" id="reasons">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Reasons I Love You</p>
+          <h2>Thirty little luxuries that make you unforgettable.</h2>
+        </div>
+        <div class="reasons-grid">
+          <article class="reason-card" data-reveal><span>Your smile</span></article>
+          <article class="reason-card" data-reveal><span>Your kindness</span></article>
+          <article class="reason-card" data-reveal><span>Your voice</span></article>
+          <article class="reason-card" data-reveal><span>Your eyes</span></article>
+          <article class="reason-card" data-reveal><span>Your laugh</span></article>
+          <article class="reason-card" data-reveal><span>Your care</span></article>
+          <article class="reason-card" data-reveal><span>Your patience</span></article>
+          <article class="reason-card" data-reveal><span>Your hugs</span></article>
+          <article class="reason-card" data-reveal><span>Your honesty</span></article>
+          <article class="reason-card" data-reveal><span>Everything about you</span></article>
+          <article class="reason-card" data-reveal><span>Your grace</span></article>
+          <article class="reason-card" data-reveal><span>Your warmth</span></article>
+          <article class="reason-card" data-reveal><span>Your courage</span></article>
+          <article class="reason-card" data-reveal><span>Your sweetness</span></article>
+          <article class="reason-card" data-reveal><span>Your little quirks</span></article>
+          <article class="reason-card" data-reveal><span>Your calm</span></article>
+          <article class="reason-card" data-reveal><span>Your spark</span></article>
+          <article class="reason-card" data-reveal><span>Your comfort</span></article>
+          <article class="reason-card" data-reveal><span>Your soul</span></article>
+          <article class="reason-card" data-reveal><span>Your dreams</span></article>
+          <article class="reason-card" data-reveal><span>Your faith</span></article>
+          <article class="reason-card" data-reveal><span>Your tenderness</span></article>
+          <article class="reason-card" data-reveal><span>Your heart</span></article>
+          <article class="reason-card" data-reveal><span>Your love</span></article>
+          <article class="reason-card" data-reveal><span>Your energy</span></article>
+          <article class="reason-card" data-reveal><span>Your magic</span></article>
+          <article class="reason-card" data-reveal><span>Your presence</span></article>
+          <article class="reason-card" data-reveal><span>Your devotion</span></article>
+          <article class="reason-card" data-reveal><span>Your forever</span></article>
+          <article class="reason-card" data-reveal><span>And the way you make life feel soft</span></article>
+        </div>
+      </section>
+
+      <section class="section promises-section" id="promises">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Promises</p>
+          <h2>A love this precious deserves a forever.</h2>
+        </div>
+        <div class="promise-list" data-reveal>
+          <p>✓ I'll always respect you.</p>
+          <p>✓ I'll always support your dreams.</p>
+          <p>✓ I'll always stand beside you.</p>
+          <p>✓ I'll always choose us.</p>
+        </div>
+      </section>
+
+      <section class="section dreams-section" id="dreams">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Future Dreams</p>
+          <h2>Our next chapter is already glowing.</h2>
+        </div>
+        <div class="dream-grid">
+          <article class="dream-card" data-reveal>Travel Together</article>
+          <article class="dream-card" data-reveal>Build Our Dream Home</article>
+          <article class="dream-card" data-reveal>Celebrate Many More Anniversaries</article>
+          <article class="dream-card" data-reveal>Grow Old Together ❤️</article>
+        </div>
+      </section>
+
+      <section class="section music-section" id="music">
+        <div class="music-card" data-reveal>
+          <p class="eyebrow">Music</p>
+          <h2>Let the romance play softly.</h2>
+          <button class="music-toggle" id="music-toggle" type="button">Mute / Unmute</button>
+          <audio id="romance-audio" loop preload="auto">
+            <source src="rsong.m4a" type="audio/mpeg" autoPlay />
+          </audio>
+        </div>
+      </section>
+
+      <section class="section final-section" id="final">
+        <div class="final-content" data-reveal>
+          <h2>I'd Choose You...<br />Again...<br />And Again...<br />Forever ❤️</h2>
+          <p>Happy First Anniversary</p>
+          <button class="premium-btn" id="final-button" type="button">Forever Begins Here</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightbox-close" type="button">×</button>
+      <img id="lightbox-image" src="" alt="Enlarged memory" />
+    </div>
+
+    <div class="memory-modal" id="memory-modal" aria-hidden="true">
+      <div class="memory-modal-card">
+        <button class="lightbox-close" id="memory-modal-close" type="button">×</button>
+        <img id="memory-modal-image" src="" alt="A cherished memory" />
+        <div class="memory-modal-copy">
+          <h3 id="memory-modal-title">A beautiful memory</h3>
+          <p id="memory-modal-text">A sweet little message for the love of my life.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="popup" aria-hidden="true">
+      <div class="popup-card">
+        <h3>I Love You ❤️</h3>
+        <button class="premium-btn" id="popup-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lenis@1.1.21/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="st.js"></script>
+  </body>
+</html>
